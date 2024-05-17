@@ -28,6 +28,9 @@ Directory: 1k-MTurk-Images-Experiment, TRANSFORMED_DALLE_images, image_feature_d
 
 1. **data_ethics_project_cnn_post_model_analysis.ipynb**: Ran this notebook to implement the CLIP CNN as well as determine the cosine similarity for each original image and AI-generated image. To run the CNN, we first used the dataframes containing the filenames for each real and AI-generated image and then retrieved the corresponding image from the 1k-MTurk-Images-Experiment and TRANSFORMED_DALLE_images directories. After preprocessing and encoding the PIL image, we stored the encoded image features into rows. This process yielded two separate output dataframes of features (one for the real image feature and one for the AI-generated image features), which we then saved as CSVs into the directory image_feature_df. With the image feature dataframes, we calculated the cosine similarity between the real image and AI-generated image by applying the cosine similarity function for each element in the dataframes. This resulted in a list of similarity scores, where each score corresponded to a real image-AI Image pair.
 
+### Determine Statistical Significance + Steps to Address
+
+
 
 
 
